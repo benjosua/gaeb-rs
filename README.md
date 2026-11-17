@@ -61,13 +61,11 @@ These are model capabilities, not a declaration that every phase exists in every
 Use a recent stable Rust toolchain with Rust 2024 edition support. Native builds use Cargo only; no reference datasets or external XML tools are needed for the default test suite.
 
 ```sh
-git clone git@github.com:benjosua/gaeb-rs.git
+git clone https://github.com/benjosua/gaeb-rs.git
 cd gaeb-rs
 cargo build --workspace --locked
 cargo test --workspace --locked
 ```
-
-This repository is private, so cloning requires access.
 
 Install the CLI from the checkout:
 
