@@ -1,0 +1,18 @@
+[package]
+name = "gaeb-wasm"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "WebAssembly DTO adapter for gaeb-core"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[lints]
+workspace = true
+
+[dependencies]
+gaeb-core = { path = "../gaeb-core" }
+serde-wasm-bindgen = "=0.6.5"
+wasm-bindgen = "=0.2.128"

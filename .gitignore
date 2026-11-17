@@ -1,0 +1,28 @@
+# Rust build output and generated WebAssembly packages.
+/target/
+**/target/
+**/pkg/
+
+# Local reference corpora, schemas, downloaded examples, and generated exports.
+# Keep synthetic regression inputs inline in Rust tests, never in these folders.
+**/testdata/
+**/fixtures/
+**/reference-data/
+**/data/
+**/examples/
+**/schemas/
+**/downloads/
+*.xml
+*.xsd
+*.zip
+*.7z
+*.[xX][0-9]*
+*.[dD][0-9]*
+*.pdf
+*.csv
+/tender.json
+
+# Local environment and OS files.
+.env
+.env.*
+.DS_Store

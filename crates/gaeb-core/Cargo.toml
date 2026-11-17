@@ -1,0 +1,28 @@
+[package]
+name = "gaeb-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Safe GAEB DA XML and GAEB 90 parser, writer, and validator"
+
+[lints]
+workspace = true
+
+[features]
+# Enables integration tests that require locally supplied, untracked reference data.
+reference-data = []
+
+[dependencies]
+base64 = "=0.22.1"
+chrono = { version = "=0.4.45", default-features = false, features = ["clock", "serde"] }
+encoding_rs = "=0.8.41"
+quick-xml = { version = "=0.38.4", features = ["serialize"] }
+regex = "=1.13.1"
+rust_decimal = { version = "=1.43.0", features = ["serde-with-str"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.151"
+thiserror = "=2.0.20"
+
+[dev-dependencies]
+pretty_assertions = "=1.4.1"
